@@ -1,0 +1,51 @@
+body{background-image: url();}
+body{background-color: burlywood;}
+
+h1{color: cornsilk;} 
+h1{font-size: 40px;
+font-family: cursive;
+text-align: center;}
+h2{color: white;
+text-align: center;}
+.caixademensagem{ 
+    text-align: center;   
+    border: length 60px;
+    border: brown;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+
+    
+background-color: antiquewhite;}
+
+.botaocriptografar {
+    color: rgb(109, 103, 103);
+    background-color: #5CF7EB;
+    text-align: center; 
+    width: 150px;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-family: 'Gill Sans';
+    
+  }
+  
+  .botaocriptografar:active {
+    color: white;
+    background-color: #ff008f;
+  }
+
+  .botaodescriptografar { color: rgb(109, 103, 103);
+    background-color: #5CF7EB;
+    text-align: center; 
+    width: 150px;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    font-family: 'Gill Sans';
+    
+  }
+  
+  .botaodescriptografar:active {
+    color: white;
+    background-color: #ff008f;
+  }}
