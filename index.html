@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -10,18 +10,23 @@
       <h1> <strong>
      Mapa do Maroto
       </strong> </h1>
-      <h2>Os segredos do mundo da magia estão sendo ameaçados,<br> digite a sua mensagem 
+      <h2>A sua localização e seus segredos estão sendo ameaçados,<br> digite a sua mensagem 
         para ser criptografada.
       </h2>
      </div>
      
      <div>
+       
       <form>
        
-        <textarea rows="10" cols="40" maxlength="500" class="caixademensagem"></textarea>
-        
-          <input type="submit" name="botao" value="CRIPTOGRAFAR" class="botaocriptografar" />
-          <input type="submit" name="botao" value="DESCRIPTOGRAFAR" class="botaodescriptografar" />
+        <textarea rows="10" cols="40" maxlength="500" class="caixademensagem"></textarea><br>
+     
+    <div><label class="seletorchave" for="chave" > Chave </label>
+      <input type="number" min="1" max="7" value="Chave" class="Chave" size="10"/>
+    </div>
+    
+          <input type="submit" name="botao" value="CRIPTOGRAFAR" class="botaocriptografar" id="botaocriptografar" />
+          <input type="submit" name="botao" value="DESCRIPTOGRAFAR" class="botaodescriptografar" id="botaodescriptografar" />
 
        </div>
        
