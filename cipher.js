@@ -10,15 +10,25 @@ M   N   O   P   Q   R   S    T  U   V   W   X   Y   Z
 //   /*(codigo da letra + deslocamento) % tamanaho do alfabeto*/ ...
 // codigoASC=> codigo1a25 => desloco=> giro => codigoASC
 // js puro aqui o texto vai ser criptografado e descriptografado
+ 
+//codigoASC= codigo0a25 
+//códigodaletra= 65
+ 
+const cipher = {
+  encode: function (string){ 
+    for (let i = 0; i < caixademensagem.lenght; i++ )
+    mensagemCodificada= ((codigoASC- 65 + offiset) %26 +65);
+   // return = mensagemCodificada;
+    function codigoASC (a) { return a.charCodeAt(0) }
+},
 
-codigoASC=> codigo0a25 
 
- const cipher = {
+ decode: function ( ) {
 
-((codigoDaLetraASC - codigoDaLetra + chaveDeDeslocamento) %26) + codigoDaLetra
-// function CIFRA(String){
-//   return
-// }
- };
+  }
 
- export default cipher;
+  // ...
+};
+
+export default cipher;
+

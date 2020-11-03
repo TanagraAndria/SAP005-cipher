@@ -37,11 +37,12 @@ form{
   width: fit-content;
 }
 
-.seletorchave{
+h3{
   font-family: Verdana;
   color: rgb(5, 5, 5);
+  font-weight: bold;
 }
-.chave{ text-align: center;
+.offiset{ text-align: center;
   color: rgb(109, 103, 103);
   font-family: 'Gill Sans'; 
   font-weight: bold;  
