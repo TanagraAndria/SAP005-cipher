@@ -1,5 +1,19 @@
 # Cifra de César
 
+ Decisões do desenho:
+ O processo e decisões do desenho foi desenvolvido a partir do tema 'MAPA DO MAROTO',
+ diretamente inspirado do filme HARRY POTTER, é utilizado para ver todo o terreno de Hogwarts e saber exatamente onde estão as pessoas, sejam alunos ou professores. Sendo assim foi desenvolvido um site onde o usuário consegue inserir
+ sua mensagem e localização e pedir para criptografa-la, para assim torná-la secreta e juntamente com a chave para
+ descriptografar, envia-la ao seu aliado.
+
+Os usuários e as suas relações com o produto:
+O produto foi desenvolvido para usuários fãs de Harry Potter, que queiram se divertir criptografando mesnsagens,
+podendo inclusive utiliza-lo em jogos de RPG.
+O site ajuda os usuários a criarem mesagens secretas, e somente os aliados que possuem a chave irão desvendar a 
+mensagem. Assim caso a mensagem seja interceptada, o segredo não será revelado ao inimigo.
+
+ 
+
 ## Índice
 
 * [1. Prefácio](#1-prefácio)
