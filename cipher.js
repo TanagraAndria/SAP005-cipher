@@ -5,7 +5,7 @@ A   B  C  D  E  F  G  H  I  J  K   L
 
 M   N   O   P   Q   R   S    T  U   V   W   X   Y   Z
 12  13  14  15  16  17  18  19  20  21  22  23  24  25  (26 letras) 
-77  78  79  80  81  82  83  84  85  86  87  88  89  90
+77  78  79  80  81  82  83  84  85  86  87  88  89 65
 */
 //  (codigo da letra + deslocamento) % tamanaho do alfabeto ...
 // codigoASC=> codigo1a25 => desloco=> giro => codigoASC
@@ -18,24 +18,26 @@ M   N   O   P   Q   R   S    T  U   V   W   X   Y   Z
   //    throw new TypeError ("Digite sem números")
   //  }  
 const cipher = {
- encode: function (offiset, string) { 
-  let mensagemCipher= "";  
-  for (let i = 0; i < string.lenght; i++ ) {
-   let codigoASC = string.charCodeAt(i);
-   let forEncode = ((codigoASC- 65 + offiset) %26 + 65);
-   mensagemCipher += String.fromCharCode(forEncode);
-     } return mensagemCipher; 
-  }
-  }
+  encode : function (offiset, string) { 
+    let mensagemCipher= "";  
+    for (let i = 0; i < string.length; i++ ) {
+      let codigoASC = string.charCodeAt(i);
+      let forEncode = ((codigoASC- 65 + offiset) %26 + 65);
+      mensagemCipher += String.fromCharCode(forEncode);
+    } 
+    return mensagemCipher;     
+  },
   
-   function  encode (offiset, string) { 
-  let  mensagemCipher= ""; 
-  for (let i = 0; i < string.lenght; i++ ){
-   let codigoASC = string.charCodeAt(i); 
-   let forEncode= ((codigoASC+ 90 - offiset) %26 -90);
-  mensagemCipher += String.fromCharCode(forEncode);
-   } return  mensagemCipher;
-   
+  decode : function (offiset, string) { 
+    let  mensagemCipher= ""; 
+    for (let i = 0; i < string.length; i++ ){
+      let codigoASC = string.charCodeAt(i); 
+      let forEncode= ((codigoASC- 65 - offiset) %26 + 65);
+      mensagemCipher += String.fromCharCode(forEncode);
+    } 
+   return  mensagemCipher;
   }
+};
+
 export default cipher;
 

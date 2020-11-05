@@ -13,19 +13,16 @@ const botaocriptografar= document.getElementById("botaocriptografar");
 botaocriptografar.addEventListener("click", cripitografar)
 
 const botaodescriptografar= document.getElementById("botaodescriptografar");
-botaodescriptografar.addEventListener("click",cripitografar); 
+botaodescriptografar.addEventListener("click",descriptografar); 
 
 function cripitografar (event){
     event.preventDefault();   
     let offiset = Number(document.getElementById("offiset").value);
     let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
-    console.log (caixademensagem);       
-    let mensagemCipher= "";
-    mensagemCipher;
-    caixademensagem;
-    let string = document.getElementById ("mensagemCipher").value;
-    document.getElementById("caixademensagem").innerHTML=cipher.encode (offiset, string);
-    console.log (offiset)      
+    let mensagemCriptografada= cipher.encode (offiset, caixademensagem);       
+    document.getElementById("caixademensagem").value= mensagemCriptografada;
+    console.log (offiset)    
+    console.log (mensagemCriptografada)  
 }
 
 function descriptografar (event){
@@ -33,11 +30,7 @@ function descriptografar (event){
     let offiset = Number(document.getElementById("offiset").value);
     let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
     console.log (caixademensagem);       
-    let mensagemCipher= "";
-    mensagemCipher;
-    caixademensagem;
-    let string = document.getElementById ("mmensagemCipher").value;
-    document.getElementById("caixademensagem").innerHTML=cipher.decode (offiset, string);
+    document.getElementById("caixademensagem").value=cipher.decode (offiset, caixademensagem);
     console.log (offiset)      
 }
 console.log(cipher);
