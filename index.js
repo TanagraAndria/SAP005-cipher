@@ -10,20 +10,34 @@
 import cipher from './cipher.js';
 
 const botaocriptografar= document.getElementById("botaocriptografar");
-botaocriptografar.addEventListener("click",  crip)
+botaocriptografar.addEventListener("click", cripitografar)
 
 const botaodescriptografar= document.getElementById("botaodescriptografar");
-botaodescriptografar.addEventListener("click",crip); 
+botaodescriptografar.addEventListener("click",cripitografar); 
 
-function crip (event){
+function cripitografar (event){
     event.preventDefault();   
     let offiset = Number(document.getElementById("offiset").value);
-    let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase();        
-    let mensagemCodificada= "";
-    mensagemCodificada;
+    let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
+    console.log (caixademensagem);       
+    let mensagemCipher= "";
+    mensagemCipher;
     caixademensagem;
-    document.getElementById("caixademensagem").innerHTML= mensagemCodificada;
-    console.log (typeof offiset)      
+    let string = document.getElementById ("mensagemCipher").value;
+    document.getElementById("caixademensagem").innerHTML=cipher.encode (offiset, string);
+    console.log (offiset)      
 }
 
+function descriptografar (event){
+    event.preventDefault();   
+    let offiset = Number(document.getElementById("offiset").value);
+    let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
+    console.log (caixademensagem);       
+    let mensagemCipher= "";
+    mensagemCipher;
+    caixademensagem;
+    let string = document.getElementById ("mmensagemCipher").value;
+    document.getElementById("caixademensagem").innerHTML=cipher.decode (offiset, string);
+    console.log (offiset)      
+}
 console.log(cipher);

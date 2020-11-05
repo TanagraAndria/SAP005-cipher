@@ -12,41 +12,30 @@ M   N   O   P   Q   R   S    T  U   V   W   X   Y   Z
 // js puro aqui o texto vai ser criptografado e descriptografado 
 //codigoASC= codigo0a25 
 //códigodaletra= 65
- // return = mensagemCodificada; 
-const cipher = {
- // encode: function (offiset, string) { 
-
+ // return = mensagemCodificada; - mensagemCipher
+// encode: function (offiset, string) { 
   //  if (offiset ==""|| string ==""|| typeof offiset == "number" || typeof string == "string"){
   //    throw new TypeError ("Digite sem números")
-  //  } 
-  //  else {
-   //    function encode (offiset,string) {
-   //     if (offiset==""|| string==""|| typeofypeof offiset == "number" || typeof string == "string"){
-  //        throw new TypeError ("Digite sem números")
-  //      }
-  //}
-
- //   let mensagemCodificada= "";  
-  //  for (let i = 0; i < caixademensagem.lenght; i++ ) {
-  //   let codigoASC = string.charCodeAt(i);
-  //   let forEncode = ((codigoASC- 65 + offiset) %26 + 65);
-  //  mensagemCodificada += String.fromCharCode(forEncode);
-  //  } return mensagemCodificada;
+  //  }  
+const cipher = {
+ encode: function (offiset, string) { 
+  let mensagemCipher= "";  
+  for (let i = 0; i < string.lenght; i++ ) {
+   let codigoASC = string.charCodeAt(i);
+   let forEncode = ((codigoASC- 65 + offiset) %26 + 65);
+   mensagemCipher += String.fromCharCode(forEncode);
+     } return mensagemCipher; 
+  }
+  }
   
-   // }
- // },
-
-
-  //decode: function (offiset, string ) {
-  //let  mensagemCodificada= ""; 
-  //for (let i = 0; i < caixademensagem.lenght; i++ ){
-  // let codigoASC = string.charCodeAt(i); 
-  // let forDecode= ((codigoASC+ 65 - offiset) %26 -65);
-  // mensagemCodificada += String.fromCharCode(forDecode);
- // } return  mensagemCodificada;
- // }
-  // ...
-};
-
+   function  encode (offiset, string) { 
+  let  mensagemCipher= ""; 
+  for (let i = 0; i < string.lenght; i++ ){
+   let codigoASC = string.charCodeAt(i); 
+   let forEncode= ((codigoASC+ 90 - offiset) %26 -90);
+  mensagemCipher += String.fromCharCode(forEncode);
+   } return  mensagemCipher;
+   
+  }
 export default cipher;
 
