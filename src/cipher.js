@@ -7,32 +7,30 @@ M   N   O   P   Q   R   S    T  U   V   W   X   Y   Z
 12  13  14  15  16  17  18  19  20  21  22  23  24  25  (26 letras) 
 77  78  79  80  81  82  83  84  85  86  87  88  89 65
 */
-//  (codigo da letra + deslocamento) % tamanaho do alfabeto ...
-// codigoASC=> codigo1a25 => desloco=> giro => codigoASC
-// js puro aqui o texto vai ser criptografado e descriptografado 
-//codigoASC= codigo0a25 
-//códigodaletra= 65
- // return = mensagemCodificada; - mensagemCipher
-// encode: function (offiset, string) { 
-  //  if (offiset ==""|| string ==""|| typeof offiset == "number" || typeof string == "string"){
-  //    throw new TypeError ("Digite sem números")
-  //  }  
+    // if (offset=="" || string=="" || typeof offset!=="number"|| typeof string!=="string") {
+  // throw new TypeError("Digite uma mensagem válida")  
+  // }
+  // else {     encode : function (offset, string) { 
+  //   if (offset=="" || string=="" || typeof offset!=="number"|| typeof string!=="string") {
+  //   throw new TypeError("Digite uma mensagem válida") 
+  //   } 
 const cipher = {
-  encode : function (offiset, string) { 
+
+  encode : function (offset, string) { 
     let mensagemCipher= "";  
     for (let i = 0; i < string.length; i++ ) {
       let codigoASC = string.charCodeAt(i);
-      let forEncode = ((codigoASC- 65 + offiset) %26 + 65);
+      let forEncode = ((codigoASC- 65 + offset) %26 + 65);
       mensagemCipher += String.fromCharCode(forEncode);
     } 
-    return mensagemCipher;     
-  },
+    return mensagemCipher;  
+    },
   
-  decode : function (offiset, string) { 
+  decode : function (offset, string) { 
     let  mensagemCipher= ""; 
     for (let i = 0; i < string.length; i++ ){
       let codigoASC = string.charCodeAt(i); 
-      let forEncode= ((codigoASC- 65 - offiset) %26 + 65);
+      let forEncode= ((codigoASC- 65 - offset) %26 + 65);
       mensagemCipher += String.fromCharCode(forEncode);
     } 
    return  mensagemCipher;

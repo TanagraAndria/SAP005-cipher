@@ -17,20 +17,21 @@ botaodescriptografar.addEventListener("click",descriptografar);
 
 function cripitografar (event){
     event.preventDefault();   
-    let offiset = Number(document.getElementById("offiset").value);
+    let offset = Number(document.getElementById("offset").value);
     let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
-    let mensagemCriptografada= cipher.encode (offiset, caixademensagem);       
+    let mensagemCriptografada= cipher.encode (offset, caixademensagem);       
     document.getElementById("caixademensagem").value= mensagemCriptografada;
-    console.log (offiset)    
+    console.log (offset)    
     console.log (mensagemCriptografada)  
 }
 
 function descriptografar (event){
     event.preventDefault();   
-    let offiset = Number(document.getElementById("offiset").value);
+    let offset = Number(document.getElementById("offset").value);
     let caixademensagem= document.getElementById ("caixademensagem").value.toUpperCase(); 
     console.log (caixademensagem);       
-    document.getElementById("caixademensagem").value=cipher.decode (offiset, caixademensagem);
-    console.log (offiset)      
+    document.getElementById("caixademensagem").value=cipher.decode (offset, caixademensagem);
+    console.log (offset)      
 }
+
 console.log(cipher);
