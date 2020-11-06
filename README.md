@@ -2,9 +2,11 @@
 
  Decisões do desenho:
  O processo e decisões do desenho foi desenvolvido a partir do tema 'MAPA DO MAROTO',
- diretamente inspirado do filme HARRY POTTER, é utilizado para ver todo o terreno de Hogwarts e saber exatamente onde estão as pessoas, sejam alunos ou professores. Sendo assim foi desenvolvido um site onde o usuário consegue inserir
+ inspirado do filme :zap: HARRY POTTER, é utilizado para ver todo o terreno de Hogwarts e saber exatamente onde estão as pessoas, sejam alunos ou professores. Sendo assim foi desenvolvido um site onde o usuário consegue inserir
  sua mensagem e localização e pedir para criptografa-la, para assim torná-la secreta e juntamente com a chave para
  descriptografar, envia-la ao seu aliado.
+A baixo temos o esquema de cores :
+ <img src="cores.png">
 
 Os usuários e as suas relações com o produto:
 O produto foi desenvolvido para usuários fãs de Harry Potter, que queiram se divertir criptografando mesnsagens,
